@@ -393,4 +393,4 @@ var mouseX = mouseY = mouseOldX = mouseOldY = 0,
                     TweenLite.killTweensOf(tris[i]);
                     tris[i].alpha = 0;
                 }
-            }
+            } 
