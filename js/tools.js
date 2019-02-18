@@ -10,7 +10,7 @@ function myTools() {
         "blue": "color: #6699CC;font-size: 12px; line-height: 18px;",
         "purple": "color: #C594C5;font-size: 12px; line-height: 18px;",
         "brown": "color: #AB7967;font-size: 12px; line-height: 18px;"
-    };
+    }; 
 
     /**
      * 加载CSS文件
@@ -19,7 +19,7 @@ function myTools() {
         if (!path || path.length === 0) { throw new Error('argument "path" is required !'); }
         var head = document.getElementsByTagName('head')[0], link = document.createElement('link');
         link.href = path; link.rel = 'stylesheet'; link.type = 'text/css'; head.appendChild(link);
-    };
+    }; 
 
     /**
      * 控制台输出图片
