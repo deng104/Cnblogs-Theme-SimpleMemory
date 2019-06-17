@@ -1,0 +1,68 @@
+/*
+ * 动画声明
+ */
+@keyframes jumping {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/*    点赞样式Begin   */
+#div_digg {
+  bottom: 0px;
+  margin: 0px;
+  position: fixed;
+  left: 2.5rem;
+  animation: jumping 5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+/* 屏幕小于1201px不显示 */
+@media only screen and (max-width: 1201px) {
+	 #div_digg {
+		display: none;
+	}
+}
+.buryit {
+  display: none;
+}
+.diggit {
+  background: url(//images.cnblogs.com/cnblogs_com/peng104/1390295/o_o_ball2.png) no-repeat;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px #fff inset;
+  cursor: pointer;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  width: 100px;
+  text-align: center;
+}
+.diggit::before {
+  content: "\6211\662f\70b9\8d5e\7403\54e6\000d\000a";
+  position: absolute;
+  top: -40px;
+  left: 7px;
+  font-size: 14px;
+  color: #5bf;
+}
+#div_digg .diggnum {
+  color: #EEE;
+  font-family: Verdana;
+  font-size: 35px;
+  line-height: 2em!important;
+}
+#digg_tips {
+  color: #fa5 !important;
+  width: 200px;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 20px;
+}
+a.digg_gray {
+  font-size: 18px;
+}
+/*    点赞样式End   */
